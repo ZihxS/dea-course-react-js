@@ -4,7 +4,8 @@
 
 import React from "react"
 
-const Testing = () => {
+const Testing = (a) => {
+  console.log(a)
   return (
     <React.Fragment>
       <h1>TESTING</h1>
