@@ -7,6 +7,7 @@ import { Button, ButtonGroup } from "react-bootstrap";
 const Collection = () => {
   const [datas, setDatas] = useState([])
   const [limit, setLimit] = useState(3)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     let isCancelled = false
@@ -34,6 +35,8 @@ const Collection = () => {
   }
 
   console.log(datas)
+
+  if (loading) return <h3 className="text-center text-primary">LOADING...</h3>
 
   return (
     <React.Fragment>
