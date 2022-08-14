@@ -1,8 +1,8 @@
 // parent component
 
-import './App.css';
-import React from 'react';
-import Testing from './components/testing';
+import './App.css'
+import React from 'react'
+import Testing from './components/testing'
 
 const App = () => {
   return (
@@ -12,4 +12,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App

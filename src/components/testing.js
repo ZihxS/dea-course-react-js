@@ -2,8 +2,8 @@
 
 // kalo untuk penulisan comp itu bisa disebut PascalCase ya untuk var itu camelCase ya
 
-import React from "react";
-import Testing2 from "./testing2";
+import React from "react"
+import Testing2 from "./testing2"
 
 const Testing = () => {
   return (
@@ -14,4 +14,4 @@ const Testing = () => {
   )
 }
 
-export default Testing;
+export default Testing
