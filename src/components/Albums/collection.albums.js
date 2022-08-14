@@ -35,8 +35,8 @@ const Collection = () => {
 
   return (
     <React.Fragment>
+      <h3>{limit} collection</h3>
       <Carousel>
-        {/* <h3>{limit} collection</h3> */}
         {/* mapping data start */}
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
@@ -60,7 +60,7 @@ const Collection = () => {
       {/* mapping data end */}
       <ButtonGroup className="d-flex justify-content-center align-items-center mt-2">
         <button className="btn btn-outline-primary" onClick={() => handleLimit("+")}>+</button>
-        <button className="btn btn-outline-primary" onClick={() => handleLimit("-")}>-</button>
+        {limit > 1 && <button className="btn btn-outline-primary" onClick={() => handleLimit("-")}>-</button>}
       </ButtonGroup>
     </React.Fragment>
   )
