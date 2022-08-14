@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Testing/>
       <center>
-        <button onClick={() => setLimit((cb) => cb + 1)}>NAEKIN LIMIT</button>
+        <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <br/>
         {getLimit}
       </center>
