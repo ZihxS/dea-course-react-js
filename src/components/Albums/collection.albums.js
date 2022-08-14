@@ -22,9 +22,11 @@ const Collection = () => {
 
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
+          console.table(data)
           return (
             <div key={i}>
-              <h1>TEST</h1>
+              <h1>{data.albumId}</h1>
+              <p>{data.title}</p>
             </div>
           )
         })}
