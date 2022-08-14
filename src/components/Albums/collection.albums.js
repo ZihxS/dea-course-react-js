@@ -19,7 +19,6 @@ const Collection = () => {
     <React.Fragment>
       <Carousel>
         {/* carousel items start */}
-
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
           console.table(data)
@@ -29,6 +28,8 @@ const Collection = () => {
                 className="d-block w-100"
                 src={data.url}
                 alt="First slide"
+                height={450}
+                width={450}
               />
               <Carousel.Caption>
                 <h3>{data.title}</h3>
