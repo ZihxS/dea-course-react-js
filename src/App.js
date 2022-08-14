@@ -11,7 +11,11 @@ const App = () => {
   return (
     <>
       <Testing/>
-      {getLimit}
+      <center>
+        <button>NAEKIN LIMIT</button>
+        <br/>
+        {getLimit}
+      </center>
     </>
   )
 }
