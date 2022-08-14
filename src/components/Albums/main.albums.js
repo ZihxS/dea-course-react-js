@@ -4,20 +4,8 @@
 
 import React, {useEffect, useState} from "react"
 import { Container } from "react-bootstrap"
-import Axios from "axios"
 
 const Albums = (props) => {
-  const [datas, setDatas] = useState([])
-
-  useEffect(() => {
-    Axios({
-      method: "GET",
-      url: `${process.env.REACT_APP_BASEURL}/photos`
-    }).then((result) => setDatas(result.data))
-  }, []);
-
-  console.log(datas[0])
-
   return (
     <React.Fragment>
       <Container className="mt-2">
