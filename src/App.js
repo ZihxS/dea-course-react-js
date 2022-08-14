@@ -12,7 +12,8 @@ const App = () => {
       <MainLayouts>
         <Router>
           <Routes>
-            <Route path="/" element={<Albums />} />
+            <Route path="/" element={<h1>HOMEPAGE</h1>} />
+            <Route path="/albums" element={<Albums />} />
             <Route path="/posts" element={<h1>POSTING</h1>} />
           </Routes>
         </Router>
