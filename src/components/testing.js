@@ -10,7 +10,6 @@ const Testing = () => {
     <React.Fragment>
       <h1>TESTING</h1>
       <p>HELLO TESTING DESCRIPTION</p>
-      <Testing2/>
     </React.Fragment>
   )
 }
