@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container'
 
-const MainLayouts = () => {
+const MainLayouts = ({children}) => {
   return (
     <Container>
-      <h1>MAIN LAYOUT</h1>
+      {children}
     </Container>
   )
 }
