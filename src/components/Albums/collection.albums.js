@@ -27,16 +27,7 @@ const Collection = () => {
 
   const handleLimit = (option) => {
     setLimit((prev) => option === "+" ? prev + 1 : prev - 1)
-
-    // if (option === "+") {
-    //   setLimit((prev) => prev + 1)
-    // }
-    // if (option === "-") {
-    //   setLimit((prev) => prev - 1)
-    // }
   }
-
-  console.log(datas)
 
   if (loading) return <Loaders />
 
