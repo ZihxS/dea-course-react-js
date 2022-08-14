@@ -15,6 +15,7 @@ const App = () => {
             <Route path="/" element={<h1>HOMEPAGE</h1>} />
             <Route path="/albums" element={<Albums />} />
             <Route path="/posts" element={<h1>POSTING</h1>} />
+            <Route path="*" element={<h1>404 NOT FOUND</h1>} />
           </Routes>
         </Router>
         {/* <Albums title="Image API" description="We fetch random image API from third party." /> */}
