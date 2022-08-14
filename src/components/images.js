@@ -13,7 +13,7 @@ const Images = (props) => {
     Axios({
       method: "GET",
       url: `${process.env.REACT_APP_BASEURL}/photos`
-    }).then((result) => console.log(result))
+    }).then((result) => setDatas(result.data))
   }, []);
 
   return (
