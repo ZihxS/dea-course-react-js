@@ -11,6 +11,8 @@
 // 10. react/redux/react-router snippets
 // 11. simple react snippets
 
+// npm i bootstrap react-bootstrap axios
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
