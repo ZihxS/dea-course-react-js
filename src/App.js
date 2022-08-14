@@ -10,7 +10,7 @@ const App = () => {
   const [getMyName, setMyName] = useState("M Saleh S")
   const inputNameRef = useRef(null)
 
-  // array kosong ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
+  // parameter array ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
     setMyName(inputNameRef.current.value)
   }, [getLimit])
