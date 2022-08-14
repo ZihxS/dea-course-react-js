@@ -10,6 +10,7 @@ const App = () => {
 
   return (
     <>
+      {getLimit}
       <Testing/>
     </>
   )
