@@ -13,9 +13,7 @@ const App = () => {
       <Testing/>
       <center>
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
-        {
-          getLimit > 0 && <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
-        }
+        <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
         <br/>
         {getLimit}
       </center>
