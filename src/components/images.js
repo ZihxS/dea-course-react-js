@@ -2,11 +2,12 @@
 
 // kalo untuk penulisan comp itu bisa disebut PascalCase ya untuk var itu camelCase ya
 
-import React, {useEffect} from "react"
+import React, {useEffect, useState} from "react"
 import { Container } from "react-bootstrap"
 import Axios from "axios"
 
 const Images = (props) => {
+  const [datas, setDatas] = useState([])
 
   useEffect(() => {
     console.log(process.env.REACT_APP_BASEURL)
