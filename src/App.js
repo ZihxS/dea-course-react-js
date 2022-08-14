@@ -1,7 +1,7 @@
 // parent component
 
 import './App.css'
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import Albums from './components/Albums/main.albums'
 import MainLayouts from './components/Layouts/main.layouts'
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom"

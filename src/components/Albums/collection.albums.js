@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from "react"
 import Axios from "axios"
 import Carousel from 'react-bootstrap/Carousel';
-import { Button, ButtonGroup } from "react-bootstrap";
+import { ButtonGroup } from "react-bootstrap";
 import Loaders from "../Utilites/loaders";
 
 const Collection = () => {
