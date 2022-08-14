@@ -15,6 +15,10 @@ const Collection = () => {
     }).then((result) => setDatas(result.data))
   }, []);
 
+  const handleLimit = (props) => {
+    console.log(`tombol di: `, props)
+  }
+
   console.log(datas)
 
   return (
@@ -23,7 +27,6 @@ const Collection = () => {
         {/* mapping data start */}
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
-          console.table(data)
           return (
             <Carousel.Item key={i}>
               <img
@@ -43,8 +46,8 @@ const Collection = () => {
       </Carousel>
       {/* mapping data end */}
       <ButtonGroup className="d-flex justify-content-center align-items-center mt-2">
-        <button className="btn btn-outline-primary">+</button>
-        <button className="btn btn-outline-primary">-</button>
+        <button className="btn btn-outline-primary" onClick={() => handleLimit("+")}>+</button>
+        <button className="btn btn-outline-primary" onClick={() => handleLimit("-")}>-</button>
       </ButtonGroup>
     </React.Fragment>
   )
