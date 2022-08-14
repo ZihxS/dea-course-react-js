@@ -4,9 +4,7 @@
 
 import React from "react"
 
-const Testing = (props) => {
-  const { title, description } = props
-
+const Testing = ({ title, description }) => {
   return (
     <React.Fragment>
       <h1>{title}</h1>
