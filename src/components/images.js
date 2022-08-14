@@ -16,6 +16,8 @@ const Images = (props) => {
     }).then((result) => setDatas(result.data))
   }, []);
 
+  console.log(datas[0])
+
   return (
     <React.Fragment>
       <Container className="mt-2">
