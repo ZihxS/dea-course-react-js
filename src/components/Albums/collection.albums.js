@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react"
 import Axios from "axios"
 import Carousel from 'react-bootstrap/Carousel';
 import { Button, ButtonGroup } from "react-bootstrap";
+import Loaders from "../Utilites/loaders";
 
 const Collection = () => {
   const [datas, setDatas] = useState([])
@@ -36,7 +37,7 @@ const Collection = () => {
 
   console.log(datas)
 
-  if (loading) return <h3 className="text-center text-primary">LOADING...</h3>
+  if (loading) return <Loaders />
 
   return (
     <React.Fragment>
