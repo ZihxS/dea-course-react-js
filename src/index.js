@@ -1,15 +1,15 @@
-// Rekomendasi extensi 
-// 1.env
-// 2.highlight matching tag
-// 3.javascript (ES6) code snippets
-// 4.javascript and typescript nightly
-// 5.javascript snippet pack
-// 6.node.js module
-// 7.npm intellisense
-// 8.path intellisense
-// 9.prettify json
-// 10.react/redux/react-router snippets
-// 11.simple react snippets
+// rekomendasi extensi:
+// 01. env
+// 02. highlight matching tag
+// 03. javascript (ES6) code snippets
+// 04. javascript and typescript nightly
+// 05. javascript snippet pack
+// 06. node.js module
+// 07. npm intellisense
+// 08. path intellisense
+// 09. prettify json
+// 10. react/redux/react-router snippets
+// 11. simple react snippets
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
