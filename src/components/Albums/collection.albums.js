@@ -19,7 +19,16 @@ const Collection = () => {
     <React.Fragment>
       <Carousel>
         {/* carousel items start */}
-        <Carousel.Item>
+
+        {/* kiri data singularnya, kanan info untuk data yang keberapa */}
+        {datas.map((data, i) => {
+          return (
+            <div key={i}>
+              <h1>TEST</h1>
+            </div>
+          )
+        })}
+        {/* <Carousel.Item>
           <img
             className="d-block w-100"
             src="https://via.placeholder.com/600/92c952"
@@ -29,7 +38,7 @@ const Collection = () => {
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> */}
       </Carousel>
       {/* carousel items end */}
     </React.Fragment>
