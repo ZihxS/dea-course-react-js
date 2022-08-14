@@ -9,7 +9,10 @@ import Axios from "axios"
 const Images = (props) => {
 
   useEffect(() => {
-    console.log("hit API di sini")
+    Axios({
+      method: "GET",
+      url: ""
+    })
   }, []);
 
   return (
