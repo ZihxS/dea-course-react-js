@@ -16,7 +16,6 @@ const Collection = () => {
   }, []);
 
   const handleLimit = (option) => {
-    console.log(`tombol di: `, option)
     if (option === "+") {
       console.log("plus diklik")
     }
