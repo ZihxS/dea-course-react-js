@@ -2,11 +2,12 @@
 
 import './App.css';
 import React from 'react';
+import Testing from './components/testing';
 
 const App = () => {
   return (
     <>
-      <h1>TESTING</h1>
+      <Testing/>
     </>
   )
 }
