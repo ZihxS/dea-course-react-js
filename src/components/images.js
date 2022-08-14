@@ -10,7 +10,6 @@ const Images = (props) => {
   const [datas, setDatas] = useState([])
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_BASEURL)
     Axios({
       method: "GET",
       url: `${process.env.REACT_APP_BASEURL}/photos`
