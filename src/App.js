@@ -10,6 +10,7 @@ const App = () => {
     <>
       <MainLayouts>
         <h1>HELLO</h1>
+        <p>AHAHAHAHAHAHA</p>
       </MainLayouts>
     </>
   )
