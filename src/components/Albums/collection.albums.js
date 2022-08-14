@@ -29,6 +29,7 @@ const Collection = () => {
   return (
     <React.Fragment>
       <Carousel>
+        {/* <h3>{limit} collection</h3> */}
         {/* mapping data start */}
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
