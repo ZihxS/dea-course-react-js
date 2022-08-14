@@ -2,15 +2,16 @@
 import React, {useEffect, useState} from "react"
 import Axios from "axios"
 import Carousel from 'react-bootstrap/Carousel';
+import { Button, ButtonGroup } from "react-bootstrap";
 
 const Collection = () => {
   const [datas, setDatas] = useState([])
-  const [limit, setLimit] = useState(3)
+  const [limit, setLimit] = useState(10)
 
   useEffect(() => {
     Axios({
       method: "GET",
-      url: `${process.env.REACT_APP_BASEURL}/photos?_limit=3`
+      url: `${process.env.REACT_APP_BASEURL}/photos?_limit=${limit}`
     }).then((result) => setDatas(result.data))
   }, []);
 
@@ -40,6 +41,10 @@ const Collection = () => {
           )
         })}
       </Carousel>
+      <ButtonGroup>
+        <button className="btn btn-outline-primary">+</button>
+        <button className="btn btn-outline-primary">-</button>
+      </ButtonGroup>
       {/* carousel items end */}
     </React.Fragment>
   )
