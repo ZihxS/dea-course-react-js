@@ -3,16 +3,14 @@
 // kalo untuk penulisan comp itu bisa disebut PascalCase ya untuk var itu camelCase ya
 
 import React from "react";
-import Testing2 from "./testing2";
 
-const Testing = () => {
+const Testing2 = () => {
   return (
     <React.Fragment>
-      <h1>TESTING</h1>
-      <p>HELLO TESTING DESCRIPTION</p>
-      <Testing2/>
+      <h1>TESTING2</h1>
+      <p>HELLO TESTING2 DESCRIPTION</p>
     </React.Fragment>
   )
 }
 
-export default Testing;
+export default Testing2;
