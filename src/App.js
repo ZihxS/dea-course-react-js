@@ -21,7 +21,7 @@ const App = () => {
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
         <br/>
-        <input placeholder="name" onChange={() => console.log("lalala")} />
+        <input placeholder="name" onChange={(e) => console.log(e.target.value)} />
         {getMyName} {getLimit}
       </center>
     </>
