@@ -3,8 +3,12 @@ import React from 'react';
 
 class App extends React.Component {
 
+  componentWillMount() {
+    console.log("will mounting")
+  }
+
   componentDidMount() {
-    console.log("render pertama...")
+    console.log("did mounting")
   }
 
   render() {
