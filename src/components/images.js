@@ -7,7 +7,7 @@ import React from "react"
 const Images = (props) => {
   return (
     <React.Fragment>
-      <h1>{props.title}</h1>
+      <h3>{props.title}</h3>
       <p>{props.description}</p>
     </React.Fragment>
   )

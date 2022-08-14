@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <MainLayouts>
-        <Images title="INI IMAGES" description="IMAGES DESCRIPTION" />
+        <Images title="Image API" description="We fetch random image API from third party." />
       </MainLayouts>
     </>
   )
