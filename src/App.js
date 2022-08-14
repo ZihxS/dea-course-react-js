@@ -11,9 +11,8 @@ const App = () => {
 
   // array kosong ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
-    setMyName("Saleh")
     console.log(`getLimit:`, getLimit)
-  }, [getLimit]) // ketika getLimit berubah
+  }, [getLimit])
 
   return (
     <>
@@ -22,6 +21,7 @@ const App = () => {
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
         <br/>
+        <input placeholder="name" onChange={() => console.log("lalala")} />
         {getMyName} {getLimit}
       </center>
     </>
