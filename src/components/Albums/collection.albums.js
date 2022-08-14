@@ -9,10 +9,17 @@ const Collection = () => {
   const [limit, setLimit] = useState(3)
 
   useEffect(() => {
-    Axios({
-      method: "GET",
-      url: `${process.env.REACT_APP_BASEURL}/photos?_limit=${limit}`
-    }).then((result) => setDatas(result.data))
+    let isCancelled = false
+
+    if (isCancelled === false) {
+      Axios({
+        method: "GET",
+        url: `${process.env.REACT_APP_BASEURL}/photos?_limit=${limit}`
+      }).then((result) => setDatas(result.data))
+    }
+
+    // clean up render
+    return () => { isCancelled = true }
   }, [limit]);
 
   const handleLimit = (option) => {
