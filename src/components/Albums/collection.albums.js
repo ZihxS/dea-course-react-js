@@ -14,9 +14,9 @@ const Collection = () => {
 
   console.log(datas[0])
   return (
-    <div>
+    <React.Fragment>
       <h1>COLLECTION</h1>
-    </div>
+    </React.Fragment>
   )
 }
 
