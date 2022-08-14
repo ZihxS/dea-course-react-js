@@ -2,13 +2,18 @@
 
 // kalo untuk penulisan comp itu bisa disebut PascalCase ya untuk var itu camelCase ya
 
-import React from "react"
+import React, {useEffect} from "react"
 import { Container } from "react-bootstrap"
 
 const Images = (props) => {
+
+  useEffect(() => {
+    console.log("hit API di sini")
+  }, []);
+
   return (
     <React.Fragment>
-      <Container>
+      <Container className="mt-2">
         <h3>{props.title}</h3>
         <p>{props.description}</p>
       </Container>
