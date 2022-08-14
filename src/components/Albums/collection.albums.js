@@ -17,6 +17,12 @@ const Collection = () => {
 
   const handleLimit = (props) => {
     console.log(`tombol di: `, props)
+    if (props === "+") {
+      console.log("plus diklik")
+    }
+    if (props === "-") {
+      console.log("minus diklik")
+    }
   }
 
   console.log(datas)
