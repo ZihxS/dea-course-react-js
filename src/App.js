@@ -22,7 +22,7 @@ const App = () => {
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
         <br/>
-        <input placeholder="name" ref={inputNameRef} />
+        <input ref={inputNameRef} />
         {getMyName} {getLimit}
       </center>
     </>
