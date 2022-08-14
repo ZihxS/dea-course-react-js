@@ -9,10 +9,11 @@ import Axios from "axios"
 const Images = (props) => {
 
   useEffect(() => {
-    Axios({
-      method: "GET",
-      url: ""
-    })
+    console.log(process.env.REACT_APP_BASEURL)
+    // Axios({
+    //   method: "GET",
+    //   url: ""
+    // })
   }, []);
 
   return (
