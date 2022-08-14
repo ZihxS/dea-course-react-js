@@ -23,12 +23,14 @@ const Collection = () => {
   }, [limit]);
 
   const handleLimit = (option) => {
-    if (option === "+") {
-      setLimit((prev) => prev + 1)
-    }
-    if (option === "-") {
-      setLimit((prev) => prev - 1)
-    }
+    setLimit((prev) => option === "+" ? prev + 1 : prev - 1)
+
+    // if (option === "+") {
+    //   setLimit((prev) => prev + 1)
+    // }
+    // if (option === "-") {
+    //   setLimit((prev) => prev - 1)
+    // }
   }
 
   console.log(datas)
@@ -60,7 +62,7 @@ const Collection = () => {
       {/* mapping data end */}
       <ButtonGroup className="d-flex justify-content-center align-items-center mt-2">
         <button className="btn btn-outline-primary" onClick={() => handleLimit("+")}>+</button>
-        {limit > 1 && <button className="btn btn-outline-primary" onClick={() => handleLimit("-")}>-</button>}
+        <button className="btn btn-outline-primary" onClick={() => handleLimit("-")}>-</button>
       </ButtonGroup>
     </React.Fragment>
   )
