@@ -6,21 +6,21 @@ import { Button, ButtonGroup } from "react-bootstrap";
 
 const Collection = () => {
   const [datas, setDatas] = useState([])
-  const [limit, setLimit] = useState(10)
+  const [limit, setLimit] = useState(3)
 
   useEffect(() => {
     Axios({
       method: "GET",
       url: `${process.env.REACT_APP_BASEURL}/photos?_limit=${limit}`
     }).then((result) => setDatas(result.data))
-  }, []);
+  }, [limit]);
 
   const handleLimit = (option) => {
     if (option === "+") {
-      console.log("plus diklik")
+      setLimit((prev) => prev + 1)
     }
     if (option === "-") {
-      console.log("minus diklik")
+      setLimit((prev) => prev - 1)
     }
   }
 
