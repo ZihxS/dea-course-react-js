@@ -8,10 +8,10 @@ import MainLayouts from './components/Layouts/main.layouts'
 const App = () => {
   return (
     <>
-      <MainLayouts>
+      {/* <MainLayouts> */}
         <h1>HELLO</h1>
         <p>AHAHAHAHAHAHA</p>
-      </MainLayouts>
+      {/* </MainLayouts> */}
     </>
   )
 }
