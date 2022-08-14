@@ -5,7 +5,7 @@
 import React from "react"
 
 const Testing = (props) => {
-  console.log(props)
+  console.log(props.title)
   return (
     <React.Fragment>
       <h1>TESTING</h1>
