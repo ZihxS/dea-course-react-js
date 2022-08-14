@@ -4,7 +4,7 @@
 
 import React from "react"
 
-const Testing = (props) => {
+const Images = (props) => {
   return (
     <React.Fragment>
       <h1>{props.title}</h1>
@@ -13,4 +13,4 @@ const Testing = (props) => {
   )
 }
 
-export default Testing
+export default Images

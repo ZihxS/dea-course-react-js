@@ -2,7 +2,7 @@
 
 import './App.css'
 import React, { useEffect, useRef, useState } from 'react'
-import Testing from './components/testing'
+import Images from './components/images'
 import MainLayouts from './components/Layouts/main.layouts'
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
       <MainLayouts>
         <h1>HELLO</h1>
         <p>AHAHAHAHAHAHA</p>
+        <Images title="INI IMAGES" description="IMAGES DESCRIPTION" />
       </MainLayouts>
     </>
   )
