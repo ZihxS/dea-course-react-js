@@ -9,8 +9,6 @@ const App = () => {
   return (
     <>
       <MainLayouts>
-        <h1>HELLO</h1>
-        <p>AHAHAHAHAHAHA</p>
         <Images title="INI IMAGES" description="IMAGES DESCRIPTION" />
       </MainLayouts>
     </>
