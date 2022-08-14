@@ -11,8 +11,9 @@ const App = () => {
 
   // array kosong ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
-    console.log("render ketika web dibuka.")
-  }, [])
+    setMyName("Saleh")
+    console.log(`getLimit:`, getLimit)
+  }, [getLimit]) // ketika getLimit berubah
 
   return (
     <>
