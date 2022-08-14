@@ -12,7 +12,6 @@ const App = () => {
 
   // parameter array ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
-    console.log(inputNameRef.current)
     setMyName(inputNameRef.current.value)
   }, [getLimit])
 
