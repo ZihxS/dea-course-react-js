@@ -15,12 +15,12 @@ const Collection = () => {
     }).then((result) => setDatas(result.data))
   }, []);
 
-  const handleLimit = (props) => {
-    console.log(`tombol di: `, props)
-    if (props === "+") {
+  const handleLimit = (option) => {
+    console.log(`tombol di: `, option)
+    if (option === "+") {
       console.log("plus diklik")
     }
-    if (props === "-") {
+    if (option === "-") {
       console.log("minus diklik")
     }
   }
