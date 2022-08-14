@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <>
-      <Testing/>
+      <Testing title="HELLO BANG" description="APAAN SIH BANG HEHEHE" />
       <center>
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
