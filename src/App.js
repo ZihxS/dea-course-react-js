@@ -8,7 +8,7 @@ const App = () => {
   // kiri nilai, kanan buat set nilai nya, yang dalem kurung useState itu nilai default nya
   const [getLimit, setLimit] = useState(1)
   const [getMyName, setMyName] = useState("M Saleh S")
-  const inputNameRef = useRef(null)
+  const inputNameRef = useRef()
 
   // parameter array ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
