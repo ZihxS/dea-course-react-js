@@ -20,7 +20,7 @@ const Collection = () => {
   return (
     <React.Fragment>
       <Carousel>
-        {/* carousel items start */}
+        {/* mapping data start */}
         {/* kiri data singularnya, kanan info untuk data yang keberapa */}
         {datas.map((data, i) => {
           console.table(data)
@@ -45,7 +45,7 @@ const Collection = () => {
         <button className="btn btn-outline-primary">+</button>
         <button className="btn btn-outline-primary">-</button>
       </ButtonGroup>
-      {/* carousel items end */}
+      {/* mapping data end */}
     </React.Fragment>
   )
 }
