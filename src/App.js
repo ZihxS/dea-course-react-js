@@ -9,12 +9,4 @@ const App = () => {
   )
 }
 
-function App2() {
-  return (
-    <div>
-      <h1>TESTING</h1>
-    </div>
-  )
-}
-
-export default App2;
+export default App;
