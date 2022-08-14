@@ -10,6 +10,8 @@ const Albums = (props) => {
   return (
     <React.Fragment>
       <Container className="mt-2">
+        <h3>{props.title}</h3>
+        <i>{props.description}</i>
         <Collection />
       </Container>
     </React.Fragment>
