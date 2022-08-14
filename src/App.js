@@ -1,17 +1,18 @@
 // parent component
 
 import './App.css'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Testing from './components/testing'
 
 const App = () => {
   // kiri nilai, kanan buat set nilai nya, yang dalem kurung useState itu nilai default nya
   const [getLimit, setLimit] = useState(1)
   const [getMyName, setMyName] = useState("M Saleh S")
+  const inputNameRef = useRef(null)
 
   // array kosong ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
-    console.log(`getLimit:`, getLimit)
+    setMyName(inputNameRef.current.value)
   }, [getLimit])
 
   return (
@@ -21,7 +22,7 @@ const App = () => {
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
         <br/>
-        <input placeholder="name" onChange={(e) => console.log(e.target.value)} />
+        <input placeholder="name" ref={inputNameRef} />
         {getMyName} {getLimit}
       </center>
     </>
