@@ -3,28 +3,13 @@
 import './App.css'
 import React, { useEffect, useRef, useState } from 'react'
 import Testing from './components/testing'
+import Container from 'react-bootstrap/Container'
 
 const App = () => {
-  // kiri nilai, kanan buat set nilai nya, yang dalem kurung useState itu nilai default nya
-  const [getLimit, setLimit] = useState(1)
-  const [getMyName, setMyName] = useState("M Saleh S")
-  const inputNameRef = useRef(getMyName)
-
-  // parameter array ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
-  useEffect(() => {
-    setMyName(inputNameRef.current.value)
-  }, [getLimit])
-
   return (
-    <>
-      <Testing title="HELLO BANG" description="APAAN SIH BANG HEHEHE" />
-      <center>
-        <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
-        <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
-        <input ref={inputNameRef} defaultValue={inputNameRef.current} />
-        {getMyName} {getLimit}
-      </center>
-    </>
+    <Container>
+      <h1>HA HA HA</h1>
+    </Container>
   )
 }
 
