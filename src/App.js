@@ -8,7 +8,7 @@ const App = () => {
   // kiri nilai, kanan buat set nilai nya, yang dalem kurung useState itu nilai default nya
   const [getLimit, setLimit] = useState(1)
   const [getMyName, setMyName] = useState("M Saleh S")
-  const inputNameRef = useRef()
+  const inputNameRef = useRef(getMyName)
 
   // parameter array ini biar ga dirender terus (jadi pas direfresh aja atau pas buka web nya aja)
   useEffect(() => {
@@ -21,8 +21,7 @@ const App = () => {
       <center>
         <button onClick={() => setLimit((prev) => prev + 1)}>NAEKIN LIMIT</button>
         <button onClick={() => setLimit((prev) => prev - 1)}>TURUNKAN LIMIT</button>
-        <br/>
-        <input ref={inputNameRef} />
+        <input ref={inputNameRef} defaultValue={inputNameRef.current} />
         {getMyName} {getLimit}
       </center>
     </>
