@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 const MainLayouts = () => {
   return (
     <Container>
-      <h1>HA HA HA</h1>
+      <h1>MAIN LAYOUTS</h1>
     </Container>
   )
 }
