@@ -9,8 +9,8 @@ const Testing = (props) => {
   console.log(props.description)
   return (
     <React.Fragment>
-      <h1>TESTING</h1>
-      <p>HELLO TESTING DESCRIPTION</p>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
     </React.Fragment>
   )
 }
