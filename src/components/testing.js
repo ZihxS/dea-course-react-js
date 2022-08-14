@@ -1,5 +1,7 @@
 // children component
 
+// kalo untuk penulisan comp itu bisa disebut pascal case ya untuk var itu camel case ya
+
 import React from "react";
 
 const Testing = () => {
