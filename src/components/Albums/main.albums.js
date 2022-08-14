@@ -6,7 +6,7 @@ import React, {useEffect, useState} from "react"
 import { Container } from "react-bootstrap"
 import Axios from "axios"
 
-const Images = (props) => {
+const Albums = (props) => {
   const [datas, setDatas] = useState([])
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const Images = (props) => {
   )
 }
 
-export default Images
+export default Albums
