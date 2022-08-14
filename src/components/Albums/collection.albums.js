@@ -14,10 +14,11 @@ const Collection = () => {
     let isCancelled = false
 
     if (isCancelled === false) {
+      setLoading(true)
       Axios({
         method: "GET",
         url: `${process.env.REACT_APP_BASEURL}/photos?_limit=${limit}`
-      }).then((result) => setDatas(result.data))
+      }).then((result) => setDatas(result.data)).catch((err) => console.log(err)).finally(() => setLoading(false))
     }
 
     // clean up render
