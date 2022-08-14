@@ -5,7 +5,7 @@ const MainLayouts = ({children}) => {
   return (
     <Container>
       <Navigation/>
-      {children}
+      {/* {children} */}
     </Container>
   )
 }
