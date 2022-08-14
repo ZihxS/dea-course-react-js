@@ -41,11 +41,11 @@ const Collection = () => {
           )
         })}
       </Carousel>
+      {/* mapping data end */}
       <ButtonGroup className="d-flex justify-content-center align-items-center mt-2">
         <button className="btn btn-outline-primary">+</button>
         <button className="btn btn-outline-primary">-</button>
       </ButtonGroup>
-      {/* mapping data end */}
     </React.Fragment>
   )
 }
