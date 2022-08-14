@@ -25,7 +25,7 @@ const Collection = () => {
           console.table(data)
           return (
             <div key={i}>
-              <h1>{data.albumId}</h1>
+              <h1>{data.url}</h1>
               <p>{data.title}</p>
             </div>
           )
