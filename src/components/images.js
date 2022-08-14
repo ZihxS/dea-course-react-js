@@ -4,6 +4,7 @@
 
 import React, {useEffect} from "react"
 import { Container } from "react-bootstrap"
+import Axios from "axios"
 
 const Images = (props) => {
 
