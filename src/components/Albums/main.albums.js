@@ -2,7 +2,7 @@
 
 // kalo untuk penulisan comp itu bisa disebut PascalCase ya untuk var itu camelCase ya
 
-import React, {useEffect, useState} from "react"
+import React from "react"
 import { Container } from "react-bootstrap"
 
 const Albums = (props) => {
