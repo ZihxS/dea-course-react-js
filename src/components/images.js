@@ -10,10 +10,10 @@ const Images = (props) => {
 
   useEffect(() => {
     console.log(process.env.REACT_APP_BASEURL)
-    // Axios({
-    //   method: "GET",
-    //   url: ""
-    // })
+    Axios({
+      method: "GET",
+      url: `${process.env.REACT_APP_BASEURL}/photos`
+    }).then((result) => console.log(result))
   }, []);
 
   return (
