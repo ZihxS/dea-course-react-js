@@ -12,7 +12,7 @@ const App = () => {
     <>
       <Testing/>
       <center>
-        <button onClick={function () {console.log("asdasdasdasd")}}>NAEKIN LIMIT</button>
+        <button onClick={() => console.log("asdasdasdasd")}>NAEKIN LIMIT</button>
         <br/>
         {getLimit}
       </center>
