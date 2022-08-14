@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Collection = () => {
   const [datas, setDatas] = useState([])
+  const [limit, setLimit] = useState(3)
 
   useEffect(() => {
     Axios({
